@@ -9,9 +9,10 @@ This repository provides a fork of [vLLM](https://github.com/vllm-project/vllm) 
 ### Serving a model with Confident Decoding
 
 ```bash
-# Install
-cd confident-vllm
-pip install -e .
+# Install vLLM v0.19.1, then overlay our modified source files
+pip install vllm==0.19.1
+VLLM_PKG=$(python -c "import vllm, os; print(os.path.dirname(vllm.__file__))")
+cp -r confident-vllm/* "$VLLM_PKG"/
 
 # Run with trough decoding enabled
 vllm serve Qwen/Qwen3.5-9B \
@@ -75,7 +76,7 @@ The following model families are supported. For multimodal models, Confident Dec
 
 ```
 .
-├── confident-vllm/          # vLLM fork with Confident Decoding integrated
+├── confident-vllm/          # Modified vLLM source files (overlay onto pip-installed vllm)
 │   ├── CONFIDENT_DECODING.md  # Technical documentation
 │   ├── model_executor/models/trough_utils.py  # Core entropy/trough logic
 │   └── model_executor/models/*.py  # Model integrations
@@ -118,7 +119,7 @@ See [confident-vllm/CONFIDENT_DECODING.md](confident-vllm/CONFIDENT_DECODING.md)
 - CUDA 12.1+ (for GPU inference)
 - PyTorch 2.x
 
-The `confident-vllm/` directory is a self-contained vLLM v0.19.1 package; install it in editable mode with `pip install -e confident-vllm/`. Each benchmark in `eval/` has its own dependencies — see each subdirectory for details (e.g. `eval/LongBench/requirements.txt`).
+Install [vLLM](https://github.com/vllm-project/vllm) v0.19.1 first (`pip install vllm==0.19.1`), then copy the contents of `confident-vllm/` into the installed `vllm` package directory (see Quick Start). The `confident-vllm/` directory contains the modified vLLM source files only — it is not a standalone installable package. Each benchmark in `eval/` has its own dependencies — see each subdirectory for details (e.g. `eval/LongBench/requirements.txt`).
 
 ## License
 
