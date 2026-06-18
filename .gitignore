@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+# Pre-built vLLM extension binaries (*.abi3.so) can be regenerated via building from source.
+# Uncomment the next line to exclude them from tracking:
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Results / outputs
+results/
+outputs/
+logs/
+*.log
+*.parquet
+
+# Cached / downloaded models
+.cache/
+.hf-cache/
+.model-cache/
+model_cache/
+
+# Env / secrets
+.env
+.envrc
+.env.local
+*.pem
+*.key
+
+# macOS
+.DS_Store
+
+# Experiment trackers
+wandb/
+tensorboard/
+lightning_logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
