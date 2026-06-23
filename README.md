@@ -127,5 +127,13 @@ The `confident-vllm/` directory is derived from [vLLM](https://github.com/vllm-p
 
 ## Citation
 
-This repository accompanies an anonymous paper submission. Citation information will be added upon publication.
+We now have a paper you can cite:
 
+```bibtex
+@article{confident decoding,
+  title={Deeper is Not Always Better: Mitigating the Alignment Tax via Confident Layer Decoding},
+  author={Zhang, Xuanming and Zhoubian, Sining and Chen, Yuxuan and Tang, Tianyi and Yang, An and Du, Sean and Zheng, Chujie and Huang, Fei and Liu, Dayiheng and Huang, Gao and Zhou, Jingren},
+  journal={arXiv preprint arXiv:2606.21906},
+  year={2026}
+}
+```
