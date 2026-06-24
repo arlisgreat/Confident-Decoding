@@ -1,0 +1,20 @@
+Omni-Math-Rule pipeline summary
+model_key: Qwen2.5-0.5B-local
+inference_model: /data1/hf_models/Qwen2.5-0.5B
+data_name: omni-math
+subset_tag: omni_math_rule_1
+exp_name: Qwen2.5-0.5B-local-smoke__omni-math__omni_math_rule_1
+inference_output: /data1/workspace/airulan/Confident-Decoding/eval/results_smoke/Qwen2.5-0.5B-local/omni/inference/omni-math/Qwen2.5-0.5B-local-smoke__omni-math__omni_math_rule_1/Qwen2.5-0.5B-local-smoke_omni-math_omni_math_rule_1_n1_20260624_164017.jsonl
+metrics_output: /data1/workspace/airulan/Confident-Decoding/eval/results_smoke/Qwen2.5-0.5B-local/omni/eval/omni-math/Qwen2.5-0.5B-local-smoke__omni-math__omni_math_rule_1/omni-math/math_eval_cot_metrics.json
+
+metrics_json:
+{
+    "num_samples": 1,
+    "num_scores": 1,
+    "timeout_samples": 0,
+    "empty_samples": 1,
+    "acc": 0.0,
+    "acc_per_sample_idx": [
+        0.0
+    ]
+}
