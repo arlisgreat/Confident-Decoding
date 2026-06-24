@@ -1,0 +1,8 @@
+GPQA-Diamond evaluation summary
+model_name: Qwen3.5-9B-local
+prompt_type: zero_shot
+num_examples: 2
+accuracy: 0.000000
+refusal_fraction: 1.000000
+csv_file: /data1/workspace/airulan/Confident-Decoding/eval/results_smoke/Qwen3.5-9B-local/gpqa/logs/zero_shot_Qwen3.5-9B-local_2026-06-24_16-33-33.csv
+log_file: /data1/workspace/airulan/Confident-Decoding/eval/results_smoke/Qwen3.5-9B-local/gpqa/logs/zero_shot_Qwen3.5-9B-local_2026-06-24_16-33-33.log

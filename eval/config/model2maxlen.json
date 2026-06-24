@@ -5,5 +5,7 @@
     "Qwen3.5-9B-Base": 262144,
     "Qwen3.5-27B-FP8": 262144,
     "Qwen3.5-35B-A3B-FP8": 262144,
-    "gemma-4-26B-A4B-it": 262144
+    "gemma-4-26B-A4B-it": 262144,
+    "Qwen3.5-9B-local": 32768,
+    "Qwen2.5-0.5B-local": 32768
 }
